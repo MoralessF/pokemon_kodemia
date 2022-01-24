@@ -1,0 +1,118 @@
+body
+{
+    background: linear-gradient(to right, rgb(194,224,234),rgb(236,200,231));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body a
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.poke_logo
+{
+    width: 100%;
+}
+
+.poke_dex
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.poke_card
+{
+    margin:20px;
+    font-family: 'Roboto',sans-serif;
+    width: 150px;
+    height: 200px;
+    border: none;
+    border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pokemon_bg
+{
+    width: 80px;
+    height: 80px;
+    border:none;
+    border-radius: 40px;
+    background: rgb(227,236,230);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon_bg img
+{
+    width: 115%;
+}
+
+.poke_dex:hover .poke_card:hover
+{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.poke_card:hover ~ .poke_card
+{
+    transform: translate3d(100px,0,0BE);
+}
+
+.poke_info
+{
+    margin-top: 4px;
+    font-size: 10px;
+    color: gray;
+}
+
+.poke_name, .poke_info
+{
+    text-align: center;
+    cursor:default;
+}
+
+/*Poke Cards Background colors*/
+
+[class$="saur"]
+{
+    background: rgb(150,205,165);
+}
+
+[class*="charm"]
+{
+    background: rgb(255,225,224);
+}
+
+.charizard
+{
+    background: linear-gradient(rgb(246,245,247),rgb(178,176,178));
+}
+
+.squirtle, .blastoise, .wartortle
+{
+    background:linear-gradient(rgb(220,240,252),rgb(162,173,184));
+}
+
+[class$="chu"]
+{
+    background: rgb(234, 243, 153);
+}
+
+[class*="toge"]
+{
+    background: rgb(236, 186, 247);
+}
